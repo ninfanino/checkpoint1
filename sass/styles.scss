@@ -1,0 +1,76 @@
+$bgcolor : #F3EFEF;
+$white : #fff;
+
+@import 'partial';
+
+@mixin bgcolor($property) {
+  background: $property;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'menu main main right right'
+    'grafica4 grafica4 grafica4 grafica5 grafica5'
+    'footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: $bgcolor;
+  padding: 10px;
+
+  .item1 {
+    height: 60px;
+    @include bgcolor(#581845);
+    color: $white;
+    div {
+      background: none;
+    }
+    .logo {
+      position: absolute;
+    }
+    .login {
+      position: absolute;
+      right: 20px;
+    }
+  }
+
+  @for $i from 2 through 6 {
+    .item#{$i} { 
+      height: 120px;
+      display: grid;
+      color: $white;
+      div {
+        background:none;
+        align-self: center;
+      }
+    }
+  }
+
+  .item2 {
+    @include bgcolor(#900C3F);
+    ul {
+      text-align: left;
+    }
+  }
+  .item3 {
+    @include bgcolor(#C70039);
+  }
+  .item4 {
+    @include bgcolor(#FF3333);
+  }
+  .item5 {
+    @include bgcolor(#FF5733);
+  }
+  .item6 {
+    @include bgcolor(#FFC300);
+  }
+  .item7 {
+    @include bgcolor(#DAF7A6);
+  }
+
+  div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 10px;
+  }
+}

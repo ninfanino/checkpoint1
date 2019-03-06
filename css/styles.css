@@ -1,0 +1,123 @@
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.item5 {
+  grid-area: grafica4;
+}
+
+.item6 {
+  grid-area: grafica5;
+}
+
+.item7 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header" "menu main main right right" "grafica4 grafica4 grafica4 grafica5 grafica5" "footer footer footer footer footer";
+  grid-gap: 10px;
+  background-color: #F3EFEF;
+  padding: 10px;
+}
+.grid-container .item1 {
+  height: 60px;
+  background: #581845;
+  color: #fff;
+}
+.grid-container .item1 div {
+  background: none;
+}
+.grid-container .item1 .logo {
+  position: absolute;
+}
+.grid-container .item1 .login {
+  position: absolute;
+  right: 20px;
+}
+.grid-container .item2 {
+  height: 120px;
+  display: grid;
+  color: #fff;
+}
+.grid-container .item2 div {
+  background: none;
+  align-self: center;
+}
+.grid-container .item3 {
+  height: 120px;
+  display: grid;
+  color: #fff;
+}
+.grid-container .item3 div {
+  background: none;
+  align-self: center;
+}
+.grid-container .item4 {
+  height: 120px;
+  display: grid;
+  color: #fff;
+}
+.grid-container .item4 div {
+  background: none;
+  align-self: center;
+}
+.grid-container .item5 {
+  height: 120px;
+  display: grid;
+  color: #fff;
+}
+.grid-container .item5 div {
+  background: none;
+  align-self: center;
+}
+.grid-container .item6 {
+  height: 120px;
+  display: grid;
+  color: #fff;
+}
+.grid-container .item6 div {
+  background: none;
+  align-self: center;
+}
+.grid-container .item2 {
+  background: #900C3F;
+}
+.grid-container .item2 ul {
+  text-align: left;
+}
+.grid-container .item3 {
+  background: #C70039;
+}
+.grid-container .item4 {
+  background: #FF3333;
+}
+.grid-container .item5 {
+  background: #FF5733;
+}
+.grid-container .item6 {
+  background: #FFC300;
+}
+.grid-container .item7 {
+  background: #DAF7A6;
+}
+.grid-container div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
